@@ -11,7 +11,7 @@ cpu_int=${cpu_usage%.*}
 echo "CPU Usage: $cpu_usage%" >> $REPORT
 
 if [ "$cpu_int" -gt "$CPU_LIMIT" ]; then
-  echo "⚠️ High CPU usage detected!" >> $REPORT
+  echo "High CPU usage detected!" >> $REPORT
 fi
 
 
